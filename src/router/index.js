@@ -7,7 +7,6 @@ import CognitiveDisability from '@/components/CognitiveDisability.vue';
 
 const routes = [
   { path: '/', name: 'About', component: AboutPage },
-  { path: '/projecte-accesibilitat', name: 'About', component: AboutPage },
   { path: '/visual', name: 'Visual', component: VisualDisability },
   { path: '/hearing', name: 'Hearing', component: HearingDisability },
   { path: '/motor', name: 'Motor', component: MotorDisability },
