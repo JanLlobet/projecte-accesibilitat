@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/">Projecte d'Accessibilitat</router-link>
+      <router-link class="navbar-brand" to="/home">Projecte d'Accessibilitat</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,7 +20,7 @@
             <router-link class="nav-link" to="/cognitive">Discapacitat Cognitiva</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Sobre el Projecte</router-link>
+            <router-link class="nav-link" to="/home">Sobre el Projecte</router-link>
           </li>
         </ul>
       </div>
