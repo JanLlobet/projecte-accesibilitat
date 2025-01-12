@@ -1,41 +1,27 @@
 <template>
-  <div class="container mt-5">
-    <h1>Sobre el Projecte</h1>
-    <p>
-      Aquest projecte té com a objectiu sensibilitzar als usuaris sense discapacitat sobre les barreres d'accessibilitat
-      que poden afectar les persones amb discapacitat en el món digital. A través d'experiments interactius en aquest lloc web,
-      els usuaris podran viure les dificultats que les persones amb discapacitat visual, auditiva, motriu i cognitiva poden experimentar
-      al navegar per internet.
-    </p>
-    <p>
-      El lloc web presenta una sèrie de simulacions que permeten als usuaris sense discapacitat sentir en primera persona
-      les dificultats d'accés a la tecnologia que tenen les persones amb discapacitat. Els usuaris podran navegar a través de barreres de
-      contingut, disseny, i interacció, les quals són habituals per a aquelles persones que tenen algun tipus de discapacitat.
-    </p>
-<!--     
-    <h2>Les Barreres d'Accés Implementades</h2>
-    <p>
-      En aquest lloc web, hem implementat diverses barreres d'accessibilitat que simulen les dificultats que poden tenir les persones amb diferents tipus de discapacitat:
-    </p>
-    <ul>
-      <li><strong>Discapacitat Visual:</strong> Simulacions de ceguesa total i baixa visibilitat.</li>
-      <li><strong>Discapacitat Auditiva:</strong> Simulacions de pèrdua auditiva parcial o total.</li>
-      <li><strong>Discapacitat Motriu:</strong> Barreres per a l'ús del ratolí i la interacció amb el teclat.</li>
-      <li><strong>Discapacitat Cognitiva:</strong> Dificultats per entendre el contingut i la interacció amb el lloc web.</li>
-    </ul> -->
-
-    <h2>Reflexió del Projecte</h2>
-    <p>
-      Aquest projecte ha estat dissenyat amb l'objectiu de sensibilitzar i educar a la comunitat sobre la importància de l'accessibilitat
-      web. Ens hem adonat de la gran diferència que existeix entre les persones amb discapacitat i les que no tenen cap mena de dificultat
-      per navegar, i hem après com petites millores poden transformar l'experiència digital per a moltes persones.
+  <div class="game-themed-container">
+    <h1 class="game-title">Missió: Inclusió</h1>
+    <p class="intro-text">
+      Uneix-te a una èpica aventura on exploraràs les barreres que molts herois han de superar per dominar el món digital.
+      Descobreix com les discapacitats visuals, auditives, motrius i cognitives poden transformar l'experiència de navegació.
     </p>
 
-    <p>
-      Esperem que aquest projecte ajudi a augmentar la consciència sobre la necessitat d'un disseny web inclusiu i accessible per a tots.
-    </p>
+    <div class="game-buttons">
+      <router-link to="/visual" class="game-btn">Nivell 1: Barreres Visuals</router-link>
+      <router-link to="/hearing" class="game-btn">Nivell 2: Barreres Auditives</router-link>
+      <router-link to="/motor" class="game-btn">Nivell 3: Barreres Motrius</router-link>
+      <router-link to="/cognitive" class="game-btn">Nivell 4: Barreres Cognitives</router-link>
+    </div>
+
+    <div class="game-story">
+      <h2 class="game-title">La teva Missió</h2>
+      <p class="game-paragraph">
+        Ets un heroi que busca restaurar l'harmonia al món digital. Per aconseguir-ho, hauràs de superar diferents
+        obstacles que simbolitzen les barreres d'accessibilitat. Cada nivell et posarà a prova i et farà reflexionar sobre
+        com es pot construir un món digital més inclusiu.
+      </p>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -45,49 +31,76 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-h1 {
+/* Contenidor general estil videojoc */
+.game-themed-container {
+  background-size: cover;
+  color: #fefefe;
+  font-family: 'Jersey 15', sans-serif;
   text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 1rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-  font-size: 1.8em;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+/* Títol principal */
+.game-title {
+  font-size: 3em;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  font-size: 1.1em;
-  margin-bottom: 0.5rem;
-}
-
-p {
+/* Text introductori */
+.intro-text {
   font-size: 1.2em;
-  line-height: 1.5;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
+/* Botons dels nivells */
+.game-buttons {
+  margin: 20px 0;
+}
 
-  h1 {
-    font-size: 2em;
-  }
+.game-btn {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #ff4500;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-  h2 {
-    font-size: 1.5em;
-  }
+.game-btn:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Secció de la història */
+.game-story {
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: #ddd;
+}
+
+.game-story h2 {
+  color: #86efac;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: 15px;
+}
+
+.game-paragraph {
+  font-size: 1.1em;
+  line-height: 1.8;
 }
 </style>

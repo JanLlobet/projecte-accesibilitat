@@ -1,23 +1,23 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/home">Projecte d'Accessibilitat</router-link>
+      <router-link class="navbar-brand" to="/home">The Last Acces</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/visual">Discapacitat Visual</router-link>
+            <router-link class="nav-link" to="/visual">Missió: Barreres Visuals</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/hearing">Discapacitat Auditiva</router-link>
+            <router-link class="nav-link" to="/hearing">Missió: Barreres Auditives</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/motor">Discapacitat Motriu</router-link>
+            <router-link class="nav-link" to="/motor">Missió: Barreres Motrius</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/cognitive">Discapacitat Cognitiva</router-link>
+            <router-link class="nav-link" to="/cognitive">Missió: Barreres Cognitives</router-link>
           </li>
         </ul>
       </div>
@@ -32,59 +32,44 @@ export default {
 </script>
 
 <style scoped>
+/* Barra de navegació millorada amb Bootstrap */
 .navbar {
-  background-color: #007bff;
-  transition: background-color 0.3s ease;
+  background-color: #343a40; /* Fons fosc per contrastar millor amb el text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Afegeix una ombra suau */
   z-index: 1000;
 }
 
-.nav-link {
-  color: black !important;
-  font-size: 1.1rem;
+.navbar-nav .nav-link {
+  color: #f8f9fa !important; /* Color clar per al text */
+  font-size: 1.1rem; /* Mida de text ajustada */
+  padding: 12px 20px; /* Espai més ample per a una millor llegibilitat */
   text-transform: uppercase;
-  padding: 10px 15px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-link:hover {
-  color: red !important;
-  transform: scale(1.1);
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important; /* Color groc per a l'efecte hover */
+  transform: scale(1.05); /* Efecte de zoom per a més interacció */
 }
 
-.navbar.navbar-light {
-  background-color: #007bff;
+/* Barra de navegació quan es fa scroll */
+.navbar.scrolled {
+  background-color: #23272b !important; /* Fons més fosc quan es fa scroll */
 }
 
-.navbar.navbar-light.scrolled {
-  background-color: #0056b3;
+/* Millora la visibilitat en pantalles petites */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Mida de text una mica més petita en pantalles petites */
+  }
 }
 
 .navbar-toggler-icon {
-  background-color: white;
+  background-color: #f8f9fa; /* Canvia l'icona de la hamburguesa a un color més clar */
 }
 
-.navbar {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-nav {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-collapse {
-  transition: all 0.3s ease;
-}
-
-body.scrolled .navbar {
-  background-color: #0056b3 !important;
-}
-
+/* Ajusta la posició del contingut per evitar que quedi cobert per la barra fixa */
 body {
   padding-top: 70px;
-}
-
-body.scrolled .navbar {
-  background-color: #0056b3 !important;
 }
 </style>

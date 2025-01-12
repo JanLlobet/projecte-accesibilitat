@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
 body {
   padding-top: 75px;
 }

@@ -1,92 +1,73 @@
 <template>
-    <div class="hearing-disability-container">
-      <h1>Discapacitat Auditiva</h1>
-      <p>
-        En aquesta pàgina, experimentareu una simulació de dificultats auditives. Les persones amb discapacitat auditiva poden
-        trobar dificultats per accedir a continguts web que depenen del so, com vídeos o àudios sense subtítols.
-      </p>
-      
-      <h2>Simulació de Pèrdua Auditiva Parcial</h2>
-      <p class="partial-hearing-loss">
-        Aquesta simulació redueix el volum de l'àudio per replicar els efectes de la pèrdua auditiva parcial. Les persones amb
-        aquest tipus de discapacitat poden escoltar sons, però sovint els perceben de manera distorsionada o amb dificultats.
-      </p>
-  
-      <h2>Simulació de Pèrdua Auditiva Total</h2>
-      <p class="total-hearing-loss">
-        Aquesta simulació desactiva el so completament per mostrar com seria la interacció amb una pàgina web que depèn totalment
-        de l'audio, sense opcions de subtítols ni transcripcions.
-      </p>
-  
-      <h2>Contingut en Vídeo Sense Subtítols</h2>
-      <p class="video-without-subtitles">
-        Aquest vídeo no té subtítols. Això pot ser una barrera per a les persones amb discapacitat auditiva, que no poden entendre el contingut
-        sense un suport visual com els subtítols.
-      </p>
-      
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cumJhlQMseY?si=RIZ42hNiBTsi-b69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
-      <h2>Reflexió sobre la discapacitat auditiva</h2>
-      <p>
-        Les persones amb discapacitat auditiva poden trobar barreres significatives quan no hi ha subtítols o transcripcions disponibles.
-        És essencial proporcionar opcions accessibles, com subtítols en vídeos o contingut alternatiu per a l'àudio.
-      </p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'HearingDisability'
-  };
-  </script>
-  
-  <style scoped>
-  .hearing-disability-container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #333;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.8em;
-    color: #444;
-  }
-  
-  p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #666;
-  }
-  
-  .partial-hearing-loss {
-    filter: brightness(0.5); /* Simulació de pèrdua auditiva parcial, baixa el contrast per simular dificultats d'escolta */
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  .total-hearing-loss {
-    filter: brightness(0); /* Simulació de pèrdua auditiva total, fa el text i contingut menys visible, representant la manca de so */
-    color: transparent;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  .video {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  .video-without-subtitles {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin: 10px 0;
-    font-style: italic;
-  }
-  </style>
-  
+  <div class="hearing-disability-container">
+    <h1>Zona de Missió: Clàssics Memorables</h1>
+    <p class="hidden-text">
+      "The Legend of Zelda: Breath of the Wild" redefineix el gènere dels jocs d'aventura amb un món obert impressionant,
+      mecàniques de joc creatives i una llibertat sense precedents per explorar. És un autèntic clàssic que ha inspirat
+      una nova generació de videojocs.
+    </p>
+    <p class="hidden-text">
+      "Super Mario 64" és el pioner dels jocs de plataformes en 3D, oferint un disseny de nivells brillant, controls intuïtius 
+      i una experiència que va marcar una fita en la història dels videojocs. Va establir un nou estàndard per a les aventures tridimensionals.
+    </p>
+    <p class="hidden-text">
+      "Final Fantasy VII" va revolucionar els jocs de rol amb una narrativa emocional i cinemàtica, personatges memorables i un sistema de combat únic. 
+      És una obra mestra que ha deixat una empremta duradora en el cor de milions de jugadors.
+    </p>
+    <p class="hidden-text">
+      "Tetris" és senzill però addictiu, una obra d'enginy que ha captivat jugadors de totes les edats des de la seva creació. 
+      El seu concepte intemporal de blocs encaixant-se perfectament és la prova que menys pot ser més en el món dels videojocs.
+    </p>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/jk6NF0R40lU?si=4HmmyG6-qZfYxnIO" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HearingDisability',
+};
+</script>
+
+<style scoped>
+.hearing-disability-container {
+  background: linear-gradient(45deg, #3a0ca3, #4361ee);
+  color: #f1faee;
+  font-family: 'Jersey 15', sans-serif;
+  padding: 20px;
+  border: 2px solid #4895ef;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffbe0b;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.hidden-text {
+  color: #3a0ca3;
+  background: #3a0ca3;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+iframe {
+  margin-top: 20px;
+  border: 2px solid #90e0ef;
+  border-radius: 8px;
+}
+</style>
