@@ -12,6 +12,9 @@ export default {
   name: 'App',
   components: {
     Navbar
+  },
+  mounted() {
+    this.$router.push('/home');
   }
 };
 </script>
