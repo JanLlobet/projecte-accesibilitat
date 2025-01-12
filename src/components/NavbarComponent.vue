@@ -32,43 +32,39 @@ export default {
 </script>
 
 <style scoped>
-/* Barra de navegació millorada amb Bootstrap */
 .navbar {
-  background-color: #343a40; /* Fons fosc per contrastar millor amb el text */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Afegeix una ombra suau */
+  background-color: #343a40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   z-index: 1000;
 }
 
 .navbar-nav .nav-link {
-  color: #f8f9fa !important; /* Color clar per al text */
-  font-size: 1.1rem; /* Mida de text ajustada */
-  padding: 12px 20px; /* Espai més ample per a una millor llegibilitat */
+  color: #f8f9fa !important; 
+  font-size: 1.1rem; 
+  padding: 12px 20px; 
   text-transform: uppercase;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffcc00 !important; /* Color groc per a l'efecte hover */
-  transform: scale(1.05); /* Efecte de zoom per a més interacció */
+  color: #ffcc00 !important; 
+  transform: scale(1.05); 
 }
 
-/* Barra de navegació quan es fa scroll */
 .navbar.scrolled {
-  background-color: #23272b !important; /* Fons més fosc quan es fa scroll */
+  background-color: #23272b !important;
 }
 
-/* Millora la visibilitat en pantalles petites */
 @media (max-width: 767px) {
   .navbar-nav .nav-link {
-    font-size: 1rem; /* Mida de text una mica més petita en pantalles petites */
+    font-size: 1rem;
   }
 }
 
 .navbar-toggler-icon {
-  background-color: #f8f9fa; /* Canvia l'icona de la hamburguesa a un color més clar */
+  background-color: #f8f9fa;
 }
 
-/* Ajusta la posició del contingut per evitar que quedi cobert per la barra fixa */
 body {
   padding-top: 70px;
 }

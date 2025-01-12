@@ -2,8 +2,10 @@
   <div class="game-themed-container">
     <h1 class="game-title">Missió: Inclusió</h1>
     <p class="intro-text">
-      Uneix-te a una èpica aventura on exploraràs les barreres que molts herois han de superar per dominar el món digital.
-      Descobreix com les discapacitats visuals, auditives, motrius i cognitives poden transformar l'experiència de navegació.
+      Uneix-te a una èpica aventura on exploraràs les barreres que molts herois han de superar per dominar el món
+      digital.
+      Descobreix com les discapacitats visuals, auditives, motrius i cognitives poden transformar l'experiència de
+      navegació.
     </p>
 
     <div class="game-buttons">
@@ -17,7 +19,8 @@
       <h2 class="game-title">La teva Missió</h2>
       <p class="game-paragraph">
         Ets un heroi que busca restaurar l'harmonia al món digital. Per aconseguir-ho, hauràs de superar diferents
-        obstacles que simbolitzen les barreres d'accessibilitat. Cada nivell et posarà a prova i et farà reflexionar sobre
+        obstacles que simbolitzen les barreres d'accessibilitat. Cada nivell et posarà a prova i et farà reflexionar
+        sobre
         com es pot construir un món digital més inclusiu.
       </p>
     </div>
@@ -31,7 +34,6 @@ export default {
 </script>
 
 <style scoped>
-/* Contenidor general estil videojoc */
 .game-themed-container {
   background-size: cover;
   color: #fefefe;
@@ -42,7 +44,6 @@ export default {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Títol principal */
 .game-title {
   font-size: 3em;
   color: #ffcc00;
@@ -50,7 +51,6 @@ export default {
   margin-bottom: 20px;
 }
 
-/* Text introductori */
 .intro-text {
   font-size: 1.2em;
   line-height: 1.6;
@@ -60,7 +60,6 @@ export default {
   margin-bottom: 20px;
 }
 
-/* Botons dels nivells */
 .game-buttons {
   margin: 20px 0;
 }
@@ -84,7 +83,6 @@ export default {
   text-shadow: 1px 1px 4px #000;
 }
 
-/* Secció de la història */
 .game-story {
   margin-top: 30px;
   background: rgba(0, 0, 0, 0.8);

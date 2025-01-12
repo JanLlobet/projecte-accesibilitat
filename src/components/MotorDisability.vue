@@ -29,7 +29,6 @@ export default {
   name: 'MotorDisability',
   mounted() {
     const button = document.getElementById('actionButton');
-    // Afegir la classe per activar l'animació erràtica del botó quan el component es munta
     button.classList.add('erratic');
   },
 };
@@ -127,12 +126,12 @@ p {
 
 #actionButton {
   transition: transform 0.2s ease;
-  pointer-events: auto; /* Permet que el botó sigui interactiu */
+  pointer-events: auto;
 }
 
 #actionButton.erratic {
   animation: erraticMoveButton 1s infinite ease-in-out;
-  pointer-events: none; /* Desactiva el clic mentre el botó es mou */
+  pointer-events: none;
 }
 
 @keyframes erraticMoveButton {
